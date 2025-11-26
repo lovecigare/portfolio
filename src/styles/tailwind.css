@@ -1,0 +1,134 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Core Background & Foreground */
+    --color-background: #FFFFFF; /* white */
+    --color-foreground: #1F2937; /* gray-800 */
+    
+    /* Border & Input */
+    --color-border: #E5E7EB; /* gray-200 */
+    --color-input: #F3F4F6; /* gray-100 */
+    --color-ring: #3B82F6; /* blue-500 */
+    
+    /* Card */
+    --color-card: #FFFFFF; /* white */
+    --color-card-foreground: #1F2937; /* gray-800 */
+    
+    /* Popover */
+    --color-popover: #FFFFFF; /* white */
+    --color-popover-foreground: #1F2937; /* gray-800 */
+    
+    /* Muted */
+    --color-muted: #F9FAFB; /* gray-50 */
+    --color-muted-foreground: #6B7280; /* gray-500 */
+    
+    /* Primary - Professional Blue */
+    --color-primary: #2563EB; /* blue-600 */
+    --color-primary-foreground: #FFFFFF; /* white */
+    
+    /* Secondary - Elegant Gray */
+    --color-secondary: #4B5563; /* gray-600 */
+    --color-secondary-foreground: #FFFFFF; /* white */
+    
+    /* Accent - Vibrant Teal */
+    --color-accent: #0D9488; /* teal-600 */
+    --color-accent-foreground: #FFFFFF; /* white */
+    
+    /* Destructive */
+    --color-destructive: #DC2626; /* red-600 */
+    --color-destructive-foreground: #FFFFFF; /* white */
+    
+    /* Success */
+    --color-success: #16A34A; /* green-600 */
+    --color-success-foreground: #FFFFFF; /* white */
+    
+    /* Warning */
+    --color-warning: #F59E0B; /* amber-500 */
+    --color-warning-foreground: #FFFFFF; /* white */
+    
+    /* Error */
+    --color-error: #DC2626; /* red-600 */
+    --color-error-foreground: #FFFFFF; /* white */
+    
+    /* Additional Portfolio Colors */
+    --color-portfolio-dark: #111827; /* gray-900 */
+    --color-portfolio-light: #F3F4F6; /* gray-100 */
+    --color-portfolio-highlight: #06B6D4; /* cyan-500 */
+  }
+
+  .dark {
+    /* Core Background & Foreground */
+    --color-background: #111827; /* gray-900 */
+    --color-foreground: #F9FAFB; /* gray-50 */
+    
+    /* Border & Input */
+    --color-border: #374151; /* gray-700 */
+    --color-input: #1F2937; /* gray-800 */
+    --color-ring: #60A5FA; /* blue-400 */
+    
+    /* Card */
+    --color-card: #1F2937; /* gray-800 */
+    --color-card-foreground: #F9FAFB; /* gray-50 */
+    
+    /* Popover */
+    --color-popover: #1F2937; /* gray-800 */
+    --color-popover-foreground: #F9FAFB; /* gray-50 */
+    
+    /* Muted */
+    --color-muted: #374151; /* gray-700 */
+    --color-muted-foreground: #9CA3AF; /* gray-400 */
+    
+    /* Primary - Professional Blue */
+    --color-primary: #3B82F6; /* blue-500 */
+    --color-primary-foreground: #FFFFFF; /* white */
+    
+    /* Secondary - Elegant Gray */
+    --color-secondary: #6B7280; /* gray-500 */
+    --color-secondary-foreground: #FFFFFF; /* white */
+    
+    /* Accent - Vibrant Teal */
+    --color-accent: #14B8A6; /* teal-500 */
+    --color-accent-foreground: #FFFFFF; /* white */
+    
+    /* Destructive */
+    --color-destructive: #EF4444; /* red-500 */
+    --color-destructive-foreground: #FFFFFF; /* white */
+    
+    /* Success */
+    --color-success: #22C55E; /* green-500 */
+    --color-success-foreground: #FFFFFF; /* white */
+    
+    /* Warning */
+    --color-warning: #FCD34D; /* amber-300 */
+    --color-warning-foreground: #111827; /* gray-900 */
+    
+    /* Error */
+    --color-error: #EF4444; /* red-500 */
+    --color-error-foreground: #FFFFFF; /* white */
+    
+    /* Additional Portfolio Colors */
+    --color-portfolio-dark: #030712; /* gray-950 */
+    --color-portfolio-light: #1F2937; /* gray-800 */
+    --color-portfolio-highlight: #22D3EE; /* cyan-400 */
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  
+  body {
+    @apply bg-background text-foreground;
+    font-feature-settings: "rlig" 1, "calt" 1;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
