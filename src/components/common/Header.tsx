@@ -10,7 +10,6 @@ interface HeaderProps {
 
 const Header = ({ className = '' }: HeaderProps) => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
-
   const navigationItems = [
     { name: 'Home', href: '/landing-page', icon: 'HomeIcon' },
     { name: 'About', href: '#about', icon: 'UserIcon' },
@@ -41,7 +40,7 @@ const Header = ({ className = '' }: HeaderProps) => {
               <Link
                 key={item.name}
                 href={item.href}
-                className="flex items-center space-x-2 px-4 py-2 rounded-md text-sm font-medium text-foreground hover:bg-muted hover:text-primary transition-colors text-white"
+                className="flex items-center space-x-2 px-4 py-2 rounded-md text-sm font-medium text-foreground hover:bg-muted hover:text-primary transition-colors text-neutral-400"
               >
                 <Icon name={item.icon as any} size={18} variant="outline" />
                 <span>{item.name}</span>

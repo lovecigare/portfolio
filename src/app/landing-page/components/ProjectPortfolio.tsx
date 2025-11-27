@@ -72,7 +72,7 @@ const ProjectPortfolio = () => {
     technologies: ['Solidity', 'Ethereum', 'React', 'IPFS', 'Web3.js'],
     image: "https://img.rocket.new/generatedImages/rocket_gen_img_135caf281-1764176515476.png",
     alt: 'NFT marketplace gallery showing digital art collection with colorful abstract pieces and trading interface',
-    liveDemo: 'https://favrr.com',
+    liveDemo: 'https://hashgreed.com/',
     github: 'https://github.com/allancastrence/nft-marketplace',
     results: [
     { metric: 'NFTs Minted', value: '10,000+' },
