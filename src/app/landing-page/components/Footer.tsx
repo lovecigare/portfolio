@@ -83,8 +83,8 @@ const Footer = () => {
             <div className="space-y-4">
               <div className="flex items-start gap-3">
                 <Icon name="EnvelopeIcon" size={20} variant="outline" className="text-[#3182ce] flex-shrink-0 mt-1" />
-                <a href="mailto:allan.castrence@example.com" className="text-gray-300 hover:text-white transition-colors">
-                  allan.castrence@example.com
+                <a href="mailto:allancastrence5@gmail.com" className="text-gray-300 hover:text-white transition-colors">
+                  allancastrence5@gmail.com
                 </a>
               </div>
               <div className="flex items-start gap-3">
@@ -93,7 +93,7 @@ const Footer = () => {
               </div>
               <div className="flex gap-4 mt-6">
                 <a
-                  href="https://linkedin.com/in/allancastrence"
+                  href="https://www.linkedin.com/in/allan-castrence-a3b94a392/allancastrence"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="w-10 h-10 bg-[#3182ce] rounded-lg flex items-center justify-center hover:bg-[#2c5282] transition-colors"
@@ -101,7 +101,7 @@ const Footer = () => {
                   <Icon name="UserGroupIcon" size={20} variant="outline" />
                 </a>
                 <a
-                  href="https://github.com/allancastrence"
+                  href="https://github.com/lovecigare"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="w-10 h-10 bg-[#3182ce] rounded-lg flex items-center justify-center hover:bg-[#2c5282] transition-colors"
@@ -119,14 +119,14 @@ const Footer = () => {
             <p className="text-gray-400 text-sm">
               © {isHydrated ? currentYear : 2025} Allan Castrence. All rights reserved.
             </p>
-            <div className="flex gap-6 text-sm">
+            {/* <div className="flex gap-6 text-sm">
               <Link href="/privacy" className="text-gray-400 hover:text-white transition-colors">
                 Privacy Policy
               </Link>
               <Link href="/terms" className="text-gray-400 hover:text-white transition-colors">
                 Terms of Service
               </Link>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>

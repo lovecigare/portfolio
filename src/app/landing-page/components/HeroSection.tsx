@@ -17,7 +17,7 @@ const HeroSection = ({ onScheduleClick, onPortfolioClick }: HeroSectionProps) =>
   }, []);
 
   return (
-    <section className="min-h-screen bg-gradient-to-br from-[#1a365d] via-[#2d3748] to-[#1a202c] pt-24 pb-16 px-4 md:px-6 lg:px-8">
+    <section className=" bg-gradient-to-br from-[#1a365d] via-[#2d3748] to-[#1a202c] pt-24 pb-16 px-4 md:px-6 lg:px-8">
       <div className="max-w-7xl mx-auto">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Left: Professional Headshot */}
@@ -47,19 +47,19 @@ const HeroSection = ({ onScheduleClick, onPortfolioClick }: HeroSectionProps) =>
             </div>
 
             <p className="text-lg md:text-xl text-gray-300 leading-relaxed max-w-2xl">
-              Currently working on full-stack and AI automation projects for clients remotely. Available for premium work and technical consulting.
+              Currently working on <b>Full-Stack</b> focused on <b>AI</b>, <b>ASP.NET</b>, <b>Blockchain Web3</b> and <b>Mobile</b> projects for clients remotely. Available for premium work.
             </p>
 
             {/* CTA Buttons */}
             <div className="flex flex-col sm:flex-row gap-4 pt-4">
-              <button
+              {/* <button
                 onClick={onScheduleClick}
                 disabled={!isHydrated}
                 className="px-8 py-4 bg-[#3182ce] text-white rounded-lg font-semibold text-lg hover:bg-[#2c5282] transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1 disabled:opacity-50 disabled:cursor-not-allowed flex items-center justify-center gap-2">
 
                 <Icon name="CalendarIcon" size={24} variant="outline" />
                 Schedule Consultation
-              </button>
+              </button> */}
               <button
                 onClick={onPortfolioClick}
                 disabled={!isHydrated}
@@ -72,10 +72,10 @@ const HeroSection = ({ onScheduleClick, onPortfolioClick }: HeroSectionProps) =>
 
             {/* Trust Bar */}
             <div className="flex flex-wrap gap-6 pt-6 border-t border-gray-700">
-              <div className="flex items-center gap-2">
+              {/* <div className="flex items-center gap-2">
                 <Icon name="BuildingOfficeIcon" size={20} variant="solid" className="text-[#3182ce]" />
                 <span className="text-sm text-gray-300">Healthera London</span>
-              </div>
+              </div> */}
               <div className="flex items-center gap-2">
                 <Icon name="MapPinIcon" size={20} variant="solid" className="text-[#3182ce]" />
                 <span className="text-sm text-gray-300">Pampanga, Philippines</span>

@@ -40,10 +40,9 @@ const ContactSection = () => {
     const res = await fetch("/api/send-email", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ email: "afoucher7255@gmail.com" }),
+      body: JSON.stringify({ name: formData.name, email: formData.email, company: formData.company, projectType: formData.projectType, budget: formData.budget, message: formData.message }),
     });
 
-    alert(formData.message)
     setIsSubmitted(true);
   };
 
@@ -304,15 +303,15 @@ const ContactSection = () => {
                   </div>
                 </a>
 
-                <button className="w-full flex items-center justify-center gap-2 p-4 bg-[#3182ce] text-white rounded-lg hover:bg-[#2c5282] transition-colors">
+                {/* <button className="w-full flex items-center justify-center gap-2 p-4 bg-[#3182ce] text-white rounded-lg hover:bg-[#2c5282] transition-colors">
                   <Icon name="ArrowDownTrayIcon" size={20} variant="outline" />
                   Download Resume
-                </button>
+                </button> */}
               </div>
             </div>
 
             {/* FAQ Quick Links */}
-            <div className="bg-blue-50 rounded-2xl p-8">
+            {/* <div className="bg-blue-50 rounded-2xl p-8">
               <h3 className="text-xl font-bold text-[#1a365d] mb-4">Quick Questions?</h3>
               <p className="text-gray-600 mb-4">Check out frequently asked questions about:</p>
               <ul className="space-y-2">
@@ -333,7 +332,7 @@ const ContactSection = () => {
                   <span>Payment terms</span>
                 </li>
               </ul>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>

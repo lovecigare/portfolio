@@ -177,7 +177,7 @@ const Testimonials = () => {
           {/* LinkedIn Verification Badge */}
           <div className="text-center mt-8">
             <p className="text-gray-300 mb-4">All testimonials verified on LinkedIn</p>
-            <a
+            {/* <a
               href="https://www.linkedin.com/in/allan-castrence-a3b94a392/"
               target="_blank"
               rel="noopener noreferrer"
@@ -185,7 +185,7 @@ const Testimonials = () => {
 
               <Icon name="UserGroupIcon" size={20} variant="outline" />
               View LinkedIn Profile
-            </a>
+            </a> */}
           </div>
         </div>
       </div>
