@@ -17,7 +17,7 @@ const HeroSection = ({ onScheduleClick, onPortfolioClick }: HeroSectionProps) =>
   }, []);
 
   return (
-    <section className=" bg-gradient-to-br from-[#1a365d] via-[#2d3748] to-[#1a202c] pt-24 pb-16 px-4 md:px-6 lg:px-8">
+    <section className="bg-gradient-to-br from-[#1a365d] via-[#2d3748] to-[#1a202c] pt-24 pb-16 px-4 md:px-6 lg:px-8">
       <div className="max-w-7xl mx-auto">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Left: Professional Headshot */}

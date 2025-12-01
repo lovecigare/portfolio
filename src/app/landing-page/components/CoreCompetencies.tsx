@@ -24,42 +24,42 @@ const CoreCompetencies = () => {
       name: 'Full-Stack Development',
       category: 'Web Development',
       proficiency: 100,
-      projects: '50+ enterprise applications',
+      projects: '10+ enterprise applications',
       icon: 'CodeBracketIcon',
     },
     {
       name: 'AI Agents & ML',
       category: 'Artificial Intelligence',
       proficiency: 93,
-      projects: '12+ AI-powered features',
+      projects: '2+ AI-powered features',
       icon: 'CpuChipIcon',
     },
     {
       name: 'Blockchain Development',
       category: 'Web3 & Crypto',
       proficiency: 95,
-      projects: '8+ DeFi applications',
+      projects: '3+ DeFi applications',
       icon: 'CubeIcon',
     },
     {
       name: 'ASP.NET Core',
       category: 'Backend Framework',
       proficiency: 98,
-      projects: '30+ enterprise APIs',
+      projects: '5+ enterprise APIs',
       icon: 'ServerIcon',
     },
     {
       name: 'Java & Spring Boot',
       category: 'Backend Framework',
       proficiency: 94,
-      projects: '25+ microservices',
+      projects: '5+ microservices',
       icon: 'CommandLineIcon',
     },
     {
       name: 'Python & Django',
       category: 'Backend Framework',
       proficiency: 99,
-      projects: '35+ data-driven apps',
+      projects: '10+ data-driven apps',
       icon: 'DocumentTextIcon',
     },
   ];
@@ -129,7 +129,7 @@ const CoreCompetencies = () => {
             {[
               'React', 'Next.js', 'TypeScript', 'Node.js', 'ASP.NET', 'Java', 'Python',
               'PostgreSQL', 'MongoDB', 'Redis', 'Docker', 'Kubernetes', 'AWS', 'Azure',
-              'Solidity', 'Web3.js', 'TensorFlow', 'PyTorch'
+              'Solidity', 'Web3.js', 'TensorFlow', 'PyTorch', 'Solana', 'Rust', 'Go'
             ].map((tech) => (
               <span
                 key={tech}

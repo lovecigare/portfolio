@@ -9,7 +9,7 @@ const ProfessionalSummary = () => {
 
   useEffect(() => {
     setIsHydrated(true);
-    
+
     // Animated counter
     let start = 0;
     const end = 8;
@@ -66,9 +66,8 @@ const ProfessionalSummary = () => {
             {milestones?.map((milestone, index) => (
               <div
                 key={index}
-                className={`flex flex-col md:flex-row items-center gap-8 ${
-                  index % 2 === 0 ? 'md:flex-row' : 'md:flex-row-reverse'
-                }`}
+                className={`flex flex-col md:flex-row items-center gap-8 ${index % 2 === 0 ? 'md:flex-row' : 'md:flex-row-reverse'
+                  }`}
               >
                 {/* Content Card */}
                 <div className="flex-1 bg-gray-50 rounded-xl p-6 shadow-lg hover:shadow-xl transition-shadow duration-300">
@@ -95,10 +94,10 @@ const ProfessionalSummary = () => {
           <div className="flex items-start gap-4 mb-6">
             <Icon name="StarIcon" size={32} variant="solid" className="text-yellow-400 flex-shrink-0" />
             <div>
-              <h3 className="text-2xl md:text-3xl font-bold mb-2">Current Role</h3>
+              <h3 className="text-2xl md:text-3xl font-bold mb-2">Last Role</h3>
               <p className="text-xl mb-4">Senior Software Engineer at Healthera</p>
               <p className="text-gray-200 leading-relaxed">
-                Leading development of enterprise healthcare solutions for London-based healthcare technology company. Architecting scalable systems serving thousands of users across the UK healthcare ecosystem, implementing AI-driven features, and ensuring HIPAA compliance.
+                Led the development of enterprise healthcare solutions for a London-based technology company, designing scalable systems used across the UK healthcare ecosystem. Built and integrated AI-driven capabilities while ensuring full compliance with HIPAA and industry security standards.
               </p>
             </div>
           </div>
