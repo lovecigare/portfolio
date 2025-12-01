@@ -195,11 +195,11 @@ const ContactSection = () => {
                   className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#3182ce] focus:border-transparent outline-none transition-all"
                 >
                   <option value="">Select budget range</option>
-                  <option value="under-5k">Under $5,000</option>
+                  <option value="under-2k">Under $2,000</option>
+                  <option value="2k-5k">$2,000 - $5,000</option>
                   <option value="5k-10k">$5,000 - $10,000</option>
                   <option value="10k-25k">$10,000 - $25,000</option>
-                  <option value="25k-50k">$25,000 - $50,000</option>
-                  <option value="over-50k">Over $50,000</option>
+                  <option value="over-25k">Over $25,000</option>
                 </select>
               </div>
 

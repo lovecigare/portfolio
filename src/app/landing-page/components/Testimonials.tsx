@@ -25,50 +25,50 @@ const Testimonials = () => {
   }, []);
 
   const testimonials: Testimonial[] = [
-  {
-    id: 1,
-    name: 'Sarah Mitchell',
-    role: 'CTO',
-    company: 'Healthera',
-    image: "https://img.rocket.new/generatedImages/rocket_gen_img_18d07eb19-1763299289544.png",
-    alt: 'Professional woman with blonde hair in navy blazer smiling confidently in modern office',
-    quote: 'Allan transformed our healthcare platform with exceptional technical expertise. His ability to architect scalable solutions while maintaining code quality is outstanding. The patient portal he built now serves 50,000+ users with 99.9% uptime.',
-    project: 'Healthera Patient Portal',
-    rating: 5
-  },
-  {
-    id: 2,
-    name: 'Michael Chen',
-    role: 'Product Manager',
-    company: 'DAV Philippines',
-    image: "https://img.rocket.new/generatedImages/rocket_gen_img_10ddd37f7-1763301351016.png",
-    alt: 'Asian businessman in gray suit with glasses smiling in corporate office setting',
-    quote: 'Working with Allan on our DeFi platform was a game-changer. His blockchain expertise and attention to security details resulted in a platform handling $50M+ in trading volume with zero security incidents.',
-    project: 'DeFi Trading Platform',
-    rating: 5
-  },
-  {
-    id: 3,
-    name: 'Jennifer Rodriguez',
-    role: 'CEO',
-    company: 'TechStart Solutions',
-    image: "https://img.rocket.new/generatedImages/rocket_gen_img_16fcf9a6b-1763299446201.png",
-    alt: 'Hispanic woman with long dark hair in white blouse smiling warmly in bright office',
-    quote: 'Allan delivered our e-commerce platform ahead of schedule and exceeded all expectations. His full-stack expertise and problem-solving skills are exceptional. We now process 1,000+ orders daily with 99.8% payment success rate.',
-    project: 'E-commerce Platform',
-    rating: 5
-  },
-  {
-    id: 4,
-    name: 'David Thompson',
-    role: 'Engineering Lead',
-    company: 'Nuxify Inc.',
-    image: "https://img.rocket.new/generatedImages/rocket_gen_img_1b290162b-1763294963048.png",
-    alt: 'Caucasian man with beard in blue shirt smiling confidently in tech startup office',
-    quote: 'Allan is one of the most talented developers I have worked with. His code quality, documentation, and mentorship of junior developers set a high standard for our entire team. Every project he touched improved significantly.',
-    project: 'Multiple Enterprise Projects',
-    rating: 5
-  }];
+    {
+      id: 1,
+      name: 'Michal Wrochna',
+      role: 'CEO',
+      company: 'Stacash',
+      image: "assets/images/clients/michal.png",
+      alt: 'Professional woman with blonde hair in navy blazer smiling confidently in modern office',
+      quote: 'Allan transformed our healthcare platform with exceptional technical expertise. His ability to architect scalable solutions while maintaining code quality is outstanding. The patient portal he built now serves 50,000+ users with 99.9% uptime.',
+      project: 'Healthera Patient Portal',
+      rating: 5
+    },
+    {
+      id: 2,
+      name: 'Michael Chen',
+      role: 'Product Manager',
+      company: 'DAV Philippines',
+      image: "assets/images/clients/edvard.png",
+      alt: 'Asian businessman in gray suit with glasses smiling in corporate office setting',
+      quote: 'Working with Allan on our DeFi platform was a game-changer. His blockchain expertise and attention to security details resulted in a platform handling $50M+ in trading volume with zero security incidents.',
+      project: 'DeFi Trading Platform',
+      rating: 5
+    },
+    {
+      id: 3,
+      name: 'Jennifer Rodriguez',
+      role: 'CEO',
+      company: 'TechStart Solutions',
+      image: "assets/images/clients/donato.png",
+      alt: 'Hispanic woman with long dark hair in white blouse smiling warmly in bright office',
+      quote: 'Allan delivered our e-commerce platform ahead of schedule and exceeded all expectations. His full-stack expertise and problem-solving skills are exceptional. We now process 1,000+ orders daily with 99.8% payment success rate.',
+      project: 'E-commerce Platform',
+      rating: 5
+    },
+    {
+      id: 4,
+      name: 'David Thompson',
+      role: 'Engineering Lead',
+      company: 'Nuxify Inc.',
+      image: "https://img.rocket.new/generatedImages/rocket_gen_img_1b290162b-1763294963048.png",
+      alt: 'Caucasian man with beard in blue shirt smiling confidently in tech startup office',
+      quote: 'Allan is one of the most talented developers I have worked with. His code quality, documentation, and mentorship of junior developers set a high standard for our entire team. Every project he touched improved significantly.',
+      project: 'Multiple Enterprise Projects',
+      rating: 5
+    }];
 
 
   const nextTestimonial = () => {
@@ -102,6 +102,7 @@ const Testimonials = () => {
               <div className="flex-shrink-0">
                 <div className="w-32 h-32 rounded-full overflow-hidden border-4 border-[#3182ce] shadow-lg">
                   <AppImage
+                    key={currentIndex}
                     src={currentTestimonial.image}
                     alt={currentTestimonial.alt}
                     className="w-full h-full object-cover" />
@@ -114,7 +115,7 @@ const Testimonials = () => {
                 {/* Rating Stars */}
                 <div className="flex gap-1 mb-4 justify-center md:justify-start">
                   {[...Array(currentTestimonial.rating)].map((_, i) =>
-                  <Icon key={i} name="StarIcon" size={24} variant="solid" className="text-yellow-400" />
+                    <Icon key={i} name="StarIcon" size={24} variant="solid" className="text-yellow-400" />
                   )}
                 </div>
 
@@ -153,13 +154,12 @@ const Testimonials = () => {
               {/* Dots Indicator */}
               <div className="flex gap-2">
                 {testimonials.map((_, index) =>
-                <button
-                  key={index}
-                  onClick={() => isHydrated && setCurrentIndex(index)}
-                  disabled={!isHydrated}
-                  className={`w-3 h-3 rounded-full transition-all duration-300 disabled:cursor-not-allowed ${
-                  index === currentIndex ? 'bg-[#3182ce] w-8' : 'bg-gray-300'}`
-                  } />
+                  <button
+                    key={index}
+                    onClick={() => isHydrated && setCurrentIndex(index)}
+                    disabled={!isHydrated}
+                    className={`w-3 h-3 rounded-full transition-all duration-300 disabled:cursor-not-allowed ${index === currentIndex ? 'bg-[#3182ce] w-8' : 'bg-gray-300'}`
+                    } />
 
                 )}
               </div>
@@ -178,7 +178,7 @@ const Testimonials = () => {
           <div className="text-center mt-8">
             <p className="text-gray-300 mb-4">All testimonials verified on LinkedIn</p>
             <a
-              href="https://linkedin.com/in/allancastrence"
+              href="https://www.linkedin.com/in/allan-castrence-a3b94a392/"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 px-6 py-3 bg-white text-[#1a365d] rounded-lg font-semibold hover:bg-gray-100 transition-colors">

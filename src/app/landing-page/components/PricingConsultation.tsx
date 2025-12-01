@@ -23,8 +23,8 @@ const PricingConsultation = () => {
   const pricingTiers: PricingTier[] = [
     {
       name: 'Consultation',
-      hourlyRate: '$75/hour',
-      phpRate: '₱4,200/hour',
+      hourlyRate: '$25/hour',
+      phpRate: '₱1,400/hour',
       features: [
         'Technical consultation',
         'Code review',
@@ -35,8 +35,8 @@ const PricingConsultation = () => {
     },
     {
       name: 'Development',
-      hourlyRate: '$100/hour',
-      phpRate: '₱5,600/hour',
+      hourlyRate: '$30/hour',
+      phpRate: '₱1,700/hour',
       features: [
         'Full-stack development',
         'API integration',
@@ -49,8 +49,8 @@ const PricingConsultation = () => {
     },
     {
       name: 'Enterprise',
-      hourlyRate: '$150/hour',
-      phpRate: '₱8,400/hour',
+      hourlyRate: '$40/hour',
+      phpRate: '₱2,200/hour',
       features: [
         'All Development features',
         'Architecture design',
@@ -68,10 +68,10 @@ const PricingConsultation = () => {
     setProjectScope(scope);
     
     const estimates: { [key: string]: string } = {
-      small: '$3,000 - $8,000',
-      medium: '$8,000 - $15,000',
-      large: '$15,000 - $30,000',
-      enterprise: '$30,000+'
+      small: '$1,500 - $4,000',
+      medium: '$3,000 - $8,000',
+      large: '$10,000 - $20,000',
+      enterprise: '$20,000+'
     };
     
     setEstimatedCost(estimates[scope] || '$8,000 - $15,000');

@@ -30,7 +30,7 @@ const CareerTimeline = () => {
     {
       company: 'Healthera',
       role: 'Senior Software Engineer',
-      period: '2022 - Present',
+      period: 'Apr 2022 - Oct 2025',
       location: 'London, UK (Remote)',
       description: 'Leading development of enterprise healthcare solutions serving 50,000+ users across UK healthcare ecosystem',
       achievements: [
@@ -56,7 +56,7 @@ const CareerTimeline = () => {
     {
       company: 'DAV Philippines',
       role: 'Senior Developer',
-      period: '2020 - 2022',
+      period: 'Apr 2020 - Mar 2022',
       location: 'Manila, Philippines',
       description: 'Developed fintech solutions and blockchain applications for international clients',
       achievements: [
@@ -82,7 +82,7 @@ const CareerTimeline = () => {
     {
       company: 'Nuxify Inc.',
       role: 'Software Engineer',
-      period: '2018 - 2020',
+      period: 'Oct 2018 - May 2020',
       location: 'Quezon City, Philippines',
       description: 'Developed web applications and mobile solutions for diverse client portfolio',
       achievements: [
